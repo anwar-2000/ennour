@@ -1,0 +1,40 @@
+.nav__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    position: sticky;
+    top: 0;
+    z-index: 11;
+    padding: 1.5rem;
+}
+        .logo img {
+            width: 50%;
+            height: 50px;
+            margin: 10px 2rem;
+        }
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+ul li {
+    margin: 0 3rem;
+    list-style-type: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 0.8rem;
+}

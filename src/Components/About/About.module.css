@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+   
+}
+.bg{
+    transform: translateY(-25px);
+    margin: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.paragraph1{
+    color: rgb(13, 6, 6);
+    width: 30rem;
+    text-align: center;
+    
+}
+.paragraph2{
+    color: rgb(17, 12, 12);
+    width: 30rem;
+    text-align: center;
+}

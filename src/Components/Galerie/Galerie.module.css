@@ -1,0 +1,33 @@
+.flex_div__container{
+    display: flex;
+    flex-direction: column;
+    transform: translateX(3rem);
+    width: 100%;
+}
+.flex_div__container > img {
+        width: 30%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+}
+
+.galerie{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 1%;
+}
+.galerie2{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 1%;
+}
+.galerie img {
+    width: 100%;
+    border-radius: 5px;
+    margin: 0 12px;
+}
+.galerie2 img {
+    width: 100%;
+    border-radius: 5px;
+    margin: 0 12px;
+}
+

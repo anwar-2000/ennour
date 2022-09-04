@@ -1,0 +1,17 @@
+.container__location{
+        display: flex;
+        justify-content: space-around;
+}       
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+.headerText{
+    margin-bottom: 1.5rem;
+
+}
+.headerText h3 {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

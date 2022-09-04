@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+.circles{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+}
+.icons{
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    transform: translateY(-10px);
+}
+
+.icon1{
+    color: tomato;
+}
+.icon2{
+    color: black;
+}
+.icon3{
+    color: skyblue;
+}
