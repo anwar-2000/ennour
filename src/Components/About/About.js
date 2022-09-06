@@ -3,7 +3,7 @@ import HeaderDivs from '../HeaderDiv/HeaderDivs'
 import classes from './About.module.css'
 
 const About = () => {
-  return <> <HeaderDivs title=' About Ennour ' />
+  return <> <HeaderDivs title=' About En Nour ' />
     <div className={classes.bg}>
     
     <div className={classes.container}>

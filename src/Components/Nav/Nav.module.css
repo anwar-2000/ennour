@@ -1,22 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Nanum+Myeongjo&family=Satisfy&display=swap');
+
 .nav__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: #333333;
     color: aliceblue;
-    position: sticky;
+    /*position: sticky;
     top: 0;
-    z-index: 11;
+    z-index: 11;*/
     padding: 1.5rem;
+    cursor: url('../../assets/32trous.png'),auto;
 }
         .logo img {
-            width: 50%;
-            height: 50px;
+            width: auto;
+            height: 70px;
             margin: 10px 2rem;
+            transform: translateX(45%);    
         }
 ul{
     display: flex;
     flex-direction: row;
+    transform: translateX(-12%);
 }
 
 ul li {
@@ -27,14 +32,76 @@ ul li {
 a{
     color: white;
     text-decoration: none;
+    transition:  400ms ease-in;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 0.9rem;
 
 }
+a:hover{
+    color: #AB6D4A;
+}
 .logo {
+    position: relative;
+    right: 3rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    background: transparent;
+    width: 20rem;
+    border-radius: 10px;
+   /* clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);*/
 }
 
 .logo h1 {
     font-size: 0.8rem;
+    color: #AB6D4A;
+    font-family: 'Acme', sans-serif;
+}
+
+.h1Nav{
+    font-family: 'Satisfy', cursive;
+    color: white;
+    font-size: 1.5rem;
+}
+.aSelcted{
+    color: white ;
+    background-color: #AB6D4A;
+    padding: 0.9rem 1rem;
+    border-radius: 5px;
+    transition: all 400ms;
+}
+.aSelcted:hover{
+    background-color: #8c5739;
+}
+
+.contact1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon1{
+    margin: 0 10px;
+    font-size: 2.5rem !important;
+    color: #AB6D4A ;
+}
+.place1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3rem;
+}
+.icon2{
+    margin: 0 10px;
+    font-size: 2.5rem !important;
+    color: #AB6D4A ;
+}
+
+.Localisation__contact{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3rem;
+    margin-bottom: 1.2rem;
+}
+.nextS{
+    transform: translateX(100%) !important;
 }

@@ -4,7 +4,8 @@
     align-items: center;
     color: #FF6347;
     height: 80vh;
-    transform: translateY(-2.5rem);
+    transform: translateY(2.5rem);
+    background-color: rgb(73, 68, 68);
 }
 
 .Left{

@@ -1,6 +1,4 @@
 import React, { useEffect, useRef ,useState } from "react";
-import IMG1 from'../../assets/produits.jpg';
-import Nav from '../Nav/Nav'
 import classes from "./Slider.module.css";
 import {Animated} from "react-animated-css";
 import "swiper/css";
@@ -8,7 +6,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 SwiperCore.use([Navigation]);
 
 
@@ -23,8 +22,10 @@ const Slider = () => {
 
     const [animeText,setAnimetext] = useState(false);
     const [animeText2,setAnimetext2] = useState(false);
+    const [animeTextPrincipale,setAnimetextPrincipale] = useState(true);
     const [clickedNext,setclicked] = useState(false);
     useEffect(()=>{
+        
           setTimeout(()=>{
                if(clickedNext){
                 setAnimetext(true);
@@ -45,7 +46,6 @@ const Slider = () => {
 
   return (
     <>
-    <Nav />
       <Swiper
         allowTouchMove={false}
         spaceBetween={30}
@@ -60,19 +60,19 @@ const Slider = () => {
       >
         <SwiperSlide className={`${classes.slide1} ${classes.slides__content}`}>
                         <div className={`${classes.text} ${classes.header__content}`}  >
-                              <h1  data-aos="zoom-in" data-aos-duration="3000">ENNOUR  BRIQUETERIE</h1>
+                             
                            <div>
-                                <Animated animationIn="bounceInLeft" animationOut="fadeOut" animationInDuration="1000" isVisible={true}>
-                                   <div>
-                                   <h3>BEST QUALITY OFFERED MADE IN MODERN WAY MADE BY NEWEST TECHS   </h3>
+                               { animeTextPrincipale &&
+                                <Animated animationIn="bounceInLeft" animationOut="fadeOut" animationInDuration="3000" isVisible={true}>
+                                   <div className={classes.textbg__slide}>
+                                    <div>
+                                      <p>NOUS NOUS FIXONS POUR LA MISSION DE  </p> <br />
+                                    <button>NOS PRODUITS</button>
+                                    </div>                                  
+                                   <h3>FABRIQUER DES BRIQUES SOLIDE <br/> ET DURABLE POUR LA CONSTRUCTION</h3>
                                           </div>
-                                </Animated>
+                                </Animated>}
                                 <div>
-                           <Animated animationIn="bounceInRight" animationOut="fadeOut" animationInDuration="2500" isVisible={true}>
-                             <div className={classes.image_slide1}>
-                                <img src={IMG1} />
-                             </div>
-                           </Animated>
                                    </div>
                           </div>
                               
@@ -84,21 +84,14 @@ const Slider = () => {
                        <div className={classes.text} >
                             { animeText && 
                               <div>
-                             <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
-                             <div>
-                                <h1 className={classes.headertext}>ENNOUR BRIQUETERIE</h1>
-                             </div>
-                           </Animated>
                                      <div>
-                           <Animated animationIn="bounceInRight" animationOut="fadeOut" animationInDuration="1000" isVisible={true}>
-                             <div className={classes.image_slide2}>
-                                <img src={IMG1} />
-                             </div>
-                           </Animated>
-                           <Animated animationIn="bounceInLeft" animationOut="fadeOut" animationInDuration="3000" isVisible={true}>
-                             <div className={classes.desc_slide2}>
-                                  <h2>Créateur de briques depuis 1929 </h2>
-                             </div>
+                           <Animated animationIn="bounceInRight" animationOut="fadeOut" animationInDuration="3000" isVisible={true}>
+                           <div className={classes.textbg__slide2}>                                
+                                   <h3>EN NOUR DISPOSE DES DERNIERES TECHNOLOGIES</h3>
+                                   <div>
+                                      <p> Lui Permettre D'assurer la meilleure fabrication des briques </p> 
+                                    </div>
+                                          </div>
                            </Animated>
                                    </div>
                            </div>
@@ -108,17 +101,24 @@ const Slider = () => {
         <SwiperSlide className={`${classes.slide3} ${classes.slides__content}`}>
                         <div className={classes.text} >
                             { animeText2 && 
-                              <Animated animationIn="bounceInRight" animationOut="fadeOut" isVisible={true}>
-                              <div>
-                                 <h1 className={classes.headertext}>ENNOUR BRIQUETERIE</h1>
+                               <div>
+                               <div>
+                     <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration="3000" isVisible={true}>
+                     <div className={classes.textbg__slide2}>                                
+                             <h3>TOUTES NOS BRIQUES SONT CONFORMES AU NORME INTERNATIONAUX</h3>
+                             <div>
+                                <p>ET CERTIFIER PAR LES DIFFIRENTS LABORATOIRES LOCAUX ET INTERNATIONAUX </p> 
                               </div>
-                            </Animated>
+                                    </div>
+                     </Animated>
+                             </div>
+                     </div>
                             }
                         </div>
         </SwiperSlide>
         <div className={classes.navigations}> 
-             <div ref={prevRef}>Prev</div>
-             <div ref={nextRef} onClick={startAnimationHandler}>Next</div>
+             <div className={classes.prevS} ref={prevRef}><ArrowBackIosNewIcon className="prevIcon"/></div>
+             <div className={classes.nextS} ref={nextRef} onClick={startAnimationHandler}><ArrowForwardIosIcon className="nextIcon"/></div>
         </div>
         
       </Swiper>

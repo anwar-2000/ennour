@@ -11,7 +11,7 @@ import HeaderDivs from "../HeaderDiv/HeaderDivs";
 const Galerie = () => {
   return (
     <>
-      <HeaderDivs title="ENNOUR GALERIE" />
+      <HeaderDivs title="En Nour Galerie" />
       <div className={classes.flex_div__container}>
         <div className={classes.galerie}>
           <div

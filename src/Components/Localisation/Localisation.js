@@ -1,20 +1,41 @@
 import React from 'react'
 import HeaderDivs from '../HeaderDiv/HeaderDivs'
 import classes from './Localisation.module.css'
+import PlaceIcon from '@mui/icons-material/Place';
 
 const Localisation = () => {
   return (
     <div>
-        <HeaderDivs title='ENNOUR LOCATION' />
+        <HeaderDivs title='En Nour Localisation' />
         <div className={classes.container__location}>
 
        
                 <div className={classes.text}>
                             <div className={classes.headerText}>
-                                        <h3> OUR LOCATION </h3>
+                                        <h3> NOTRE LOCALISATION & HEURES D'OUVERTURE </h3>
                             </div>
                             <div className={classes.paragraph}>
-                                    <p>lorem lorem lorem loerm lorem loremloerm loerm lorem lorem lorem lorem lorem lorem loerm lorem loremloerm loerm lorem lorem loremlorem lorem lorem loerm lorem loremloerm loerm lorem lorem lorem </p>
+                                 <p>  <PlaceIcon/> BP 536 SIDI BOUNOUAR، Remchi 13005</p>
+                                 <p>         <strong> mardi</strong>
+                                              08:00–16:00 <br />
+
+                                                  <strong>mercredi</strong>
+                                                          08:00–16:00 <br />
+
+                                                          <strong> jeudi</strong>
+                                                          08:00–16:00 <br />
+
+                                                          <strong>  vendredi</strong>
+                                                                    Fermé <br />
+
+                                                                    <strong>  samedi</strong>
+                                                                    Fermé <br />
+
+                                                                    <strong>  dimanche</strong>
+                                                                      08:00–16:00 <br />
+
+                                                                      <strong>  lundi</strong>
+                                                                                      08:00–16:00</p>
                             </div>
                 </div>
                 <div className={classes.carte}>

@@ -4,15 +4,16 @@ import classes from'./Contact.module.css'
 import {BsMessenger} from 'react-icons/bs'
 import {IoLogoWhatsapp} from 'react-icons/io5'
 import {BsTwitter} from 'react-icons/bs'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Contact = () => {
   return <>
-    <HeaderDivs title='Contact Ennour' />
+    <HeaderDivs title='Contact En Nour' />
     <div className={classes.container}>
             <div className={classes.Left}>
                     <div className={classes.card}>
                                     <div className={classes.icons}>
-                                                <BsMessenger />
+                                                <LinkedInIcon />
                                     </div>
                                     <div className={classes.text}>
                                                 <a href=''>Send a message</a>

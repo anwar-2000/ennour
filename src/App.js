@@ -18,6 +18,7 @@ function App() {
   }, []);
   return (
     <>
+    <Nav/>
     <Slider />
     <About />
     <Products />
