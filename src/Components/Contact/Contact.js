@@ -7,6 +7,20 @@ import {BsTwitter} from 'react-icons/bs'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Contact = () => {
+       /* var templateParams = {
+                name: 'James',
+                notes: 'Check this out!'
+            };
+             
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+                .then(function(response) {
+                   console.log('SUCCESS!', response.status, response.text);
+                }, function(error) {
+                   console.log('FAILED...', error);
+                });*/
+            
+
+
   return <>
     <HeaderDivs title='Contact En Nour' />
     <div className={classes.container}>

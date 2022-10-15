@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import SwiperCore, { Navigation} from 'swiper';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 SwiperCore.use([Navigation]);
@@ -105,7 +105,7 @@ const Slider = () => {
                                <div>
                      <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration="3000" isVisible={true}>
                      <div className={classes.textbg__slide2}>                                
-                             <h3>TOUTES NOS BRIQUES SONT CONFORMES AU NORME INTERNATIONAUX</h3>
+                             <h3>TOUTES NOS BRIQUES SONT CONFORMES AU NORMES INTERNATIONALS</h3>
                              <div>
                                 <p>ET CERTIFIER PAR LES DIFFIRENTS LABORATOIRES LOCAUX ET INTERNATIONAUX </p> 
                               </div>

@@ -1,3 +1,10 @@
 .card{
-    margin: 1.5rem 1.5rem;
+    /*margin: 1.5rem 1.5rem;*/
+    overflow: scroll;
+}
+.boxModal  {
+    overflow: scroll;
+}
+.boxModal img {
+        width: 100%;
 }

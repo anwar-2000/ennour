@@ -8,6 +8,8 @@ import classes from './Product.module.css'
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
+import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
+import InnerImageZoom from 'react-inner-image-zoom';  
 
 const style = {
   position: 'absolute',
@@ -45,20 +47,17 @@ const Product =(props) => {
           </Typography>
         </CardContent>
         <Button onClick={handleOpen}>Open modal</Button>
-      <Modal
+      <Modal  className={classes.modalwidth}                   
         open={open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
+        <Box sx={style} className={classes.boxModal}>
+          <Typography id="modal-modal-title">
+          <InnerImageZoom src={props.ficheTech}  />
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
-        </Box>
+        </Box>                                                          
       </Modal>
       </CardActionArea>
     </Card>
